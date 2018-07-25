@@ -18,6 +18,11 @@ function route = DijkstraTorus (input_map, start_coords, dest_coords)
 % 5 - green - start
 % 6 - yellow - destination
 
+%Add these lines of code before
+input_map(:, 181) = [];
+input_map(181, :) = [];
+% this line 
+
 cmap = [1 1 1; ...
         0 0 0; ...
         1 0 0; ...
